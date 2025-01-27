@@ -1,2 +1,2 @@
-# Sorteador-de-Quest-es
+# Sorteador-de-Questões
 Projeto feito com JavaScript combinado com HTML e CSS
