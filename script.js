@@ -1,3 +1,90 @@
+<!DOCTYPE HTML!>
+<html leng="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteador de Questões</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+ES+Guides&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Quicksand", "Roboto", "Nunito", "Courier New", Courier, monospace;
+    color: #000;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.7rem;
+}
+
+.container {
+    padding: 3rem;
+    background-color: #ededed;
+    border-radius: 1rem;
+    border: #fcfffc solid;
+    margin-top: 5rem;
+    z-index: 1;
+}
+
+#questaoDiv {
+    text-align: left;
+    left: 0;
+    z-index: 2;
+}
+
+.opcoes {
+    margin-bottom: 0.75rem;
+}
+
+#answer {
+    opacity: 0;
+    z-index: 2;
+    padding: 1rem;
+}
+
+button {
+    border-radius: 0.8rem;
+    background-color: #f5f5f5;
+    padding: 0.3rem;
+    font-family: Verdana, "Geneva", Tahoma, sans-serif;
+    color: #000;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #d4d4d4;
+    transform: scale(1.10);
+    transition: 1s;
+}
+
+button:active {
+    cursor: progress;
+}
+
+#botaoSorteio {
+    position: relative;
+    margin-top: 1.7rem;
+    left: 47%;
+    right: 40%;
+    width: 5rem;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteador de Questões</h1>
+        <div id="questaoDiv"><p>Clique no botão abaixo para sortear uma questão de vestibular</p></div>
+        <button id="botaoSorteio">Sortear</button>
+    </div>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
     let questaoDiv = document.getElementById('questaoDiv');
     const botaoSorteio = document.getElementById('botaoSorteio');
@@ -157,3 +244,6 @@ document.addEventListener('DOMContentLoaded', () => {
         buttonShow.addEventListener('click', showAnswer);
     };
 });
+</script>
+</body>
+</html>
