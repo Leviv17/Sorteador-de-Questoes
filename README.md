@@ -13,7 +13,7 @@
 </ul>
 <ul><strong>Como Usar</strong>
   <li>Clone este repositório: https://github.com/Leviv17/Sorteador-de-Questoes.git</li>
-  <li>Copie os arquivos para um editor de texto(de preferência Visual Code Studio)</li>
+  <li>Copie os arquivos para um editor de texto(de preferência Visual Studio Code)</li>
   <li>Abra o arquivo index.html em seu navegador</li>
   <li>Clique no botão "Sortear" para obter uma questão aleatória da lista</li>
 </ul>
