@@ -7,9 +7,9 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #fffed5;
     font-family: "Quicksand", "Roboto", "Nunito", "Courier New", Courier, monospace;
-    color: #000;
+    color: #4b3805;
 }
 
 h1 {
@@ -20,11 +20,12 @@ h1 {
 
 .container {
     padding: 3rem;
-    background-color: #ededed;
+    background-color: #fff6d7;
     border-radius: 1rem;
-    border: #fcfffc solid;
+    box-shadow: 0 0 10px 5px #e9b934;
     margin-top: 5rem;
     z-index: 1;
+    height: 65%;
 }
 
 #questaoDiv {
@@ -45,15 +46,15 @@ h1 {
 
 button {
     border-radius: 0.8rem;
-    background-color: #f5f5f5;
+    background-color: #ffed85;
     padding: 0.3rem;
     font-family: Verdana, "Geneva", Tahoma, sans-serif;
-    color: #000;
+    color: #4b3805;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #d4d4d4;
+    background-color: #e9b934;
     transform: scale(1.10);
     transition: 1s;
 }
@@ -63,9 +64,10 @@ button:active {
 }
 
 #botaoSorteio {
-    position: relative;
-    margin-top: 1.7rem;
-    left: 47%;
+    position: absolute;
     right: 40%;
-    width: 5rem;
+    left: 40%;
+    bottom: 4.5rem;
+    height: 3rem;
+    font-size: 20px;
 }
