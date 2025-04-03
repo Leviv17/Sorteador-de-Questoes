@@ -114,6 +114,16 @@ document.addEventListener('DOMContentLoaded', () => {
         d) Lisossomo.<br>
         e) Retículo endoplasmático rugoso.`,
         resposta: `<strong>Alternativa "b".</strong> A mitocôndria é responsável pela produção de energia na célula através da respiração celular.`
+        },
+        {
+        enunciado: `Segundo a primeira lei de Mendel:`,
+        opcoes: `a) as características de um indivíduo são determinadas por genes dominantes.<br>
+        b) as características de um indivíduo são determinadas por alelos recessivos.<br>
+        c) as características de um indivíduo são determinadas por um par de fatores.<br>
+        d) as características de um indivíduo são determinadas por duplicação de um fator.`,
+        resposta: `<strong>Alternativa "c".</strong> As características de um indivíduo são determinadas por um par de fatores.<br>
+        Segundo a primeira lei de Mendel, também conhecida como Lei da Segregação dos Fatores, as características resulta da 
+        combinação de dois fatores que se separam na formação dos gametas.`
         }
     ];
 
@@ -140,20 +150,19 @@ document.addEventListener('DOMContentLoaded', () => {
             questoesSorteadas = [];
         }
 
-        function showAnswer() {
+        const buttonShow = document.getElementById('buttonShow');
+        buttonShow.addEventListener('click', () => {
             let answer = document.getElementById('answer');
 
             if (answer.style.opacity == '0') {
                 answer.style.opacity = '100%';
-                answer.style.transition = '1s';
+                answer.style.transition = '0.5s';
                 buttonShow.textContent = 'Ocultar Resposta';
             } else {
                 answer.style.opacity = '0';
-                answer.style.transition = '1s';
+                answer.style.transition = '0.5s';
                 buttonShow.textContent = 'Mostrar Resposta';
             }
-        };
-        const buttonShow = document.getElementById('buttonShow');
-        buttonShow.addEventListener('click', showAnswer);
+        });
     };
 });
